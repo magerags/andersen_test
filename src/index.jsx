@@ -12,7 +12,7 @@ const Hello = ({ name }) => {
   );
 };
 
-const root = document.getElementById('root');
-if (root) {
-  ReactDOM.render(<Hello name="World" />, root);
+const quote = document.getElementById('quote');
+if (quote) {
+  ReactDOM.render(<Hello name="Tom" />, quote);
 }

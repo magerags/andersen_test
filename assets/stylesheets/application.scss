@@ -1,10 +1,24 @@
 body {
-  font-family: Helvetica;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-#root {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.container {
+  max-width: 800px;
+}
+
+.header {
+  height: 600px;
+  background-image: linear-gradient(to right, rgba(20, 62, 146, 0.4) 20%, rgba(48, 152, 125, 0.5), rgba(0,0,0,0) 65%),
+    url('/assets/images/header_image.jpeg');
+  filter: brightness(95%);
+  background-position: center;
+  background-size: cover;
+}
+
+.about {
+  height: 700px;
+}
+
+.services {
+  height: 300px;
 }
