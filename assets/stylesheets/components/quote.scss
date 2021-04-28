@@ -1,0 +1,79 @@
+.react-quote {
+  width: 370px;
+  height: 390px;
+  background-color: white;
+
+  .quote-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 35px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  p {
+    color: rgba(140,140,140,1);
+    margin-bottom: 35px;
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus,
+  button:focus {
+      outline: none;
+  }
+
+  input {
+    border: none;
+    margin-left: 8px;
+    font-size: 0.9rem;
+    width: 90%;
+  }
+
+  .autocomplete-dropdown-container {
+    position: absolute;
+    z-index: 99;
+    padding: 0 0 0 10px;
+    background-color: white;
+
+    span {
+      margin-left: 8px;
+    }
+  }
+
+  .input-container {
+    margin-bottom: 10px;
+    border: 1px solid rgba($color: #000000, $alpha: 0.1);
+    padding: 8px;
+
+    i {
+      color: rgba(100,100,100,1);
+    }
+  }
+
+  button {
+    margin: 38px -35px -35px -35px;
+    padding: 17px 0;
+    border: none;
+    background-color: #143e92;
+    color: white;
+  }
+}
+
+.quote-container-submitted {
+  padding: 50px 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  i {
+    font-size: 4rem;
+    color: green;
+  }
+}

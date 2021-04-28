@@ -1,0 +1,24 @@
+.btn {
+  border-radius: 0 0 15px 0;
+  font-size: 0.7rem;
+  padding: 10px 30px;
+
+  i {
+    font-size: 0.9rem;
+    margin-left: 20px;
+    position: relative;
+    top: 2px;
+  }
+}
+
+.btn-primary {
+  color: white;
+}
+
+.btn-outline-primary {
+  color: rgba(60,60,60,1);
+}
+
+.btn-outline-primary:hover {
+  color: white;
+}

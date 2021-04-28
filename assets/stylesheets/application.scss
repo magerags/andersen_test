@@ -1,77 +1,18 @@
 @import 'config';
+@import 'components/headings';
+@import 'components/buttons';
+@import 'components/navbar';
+@import 'components/quote';
+@import 'components/datepicker/datepicker';
+@import 'components/datepicker/mixins';
+@import 'components/datepicker/variables';
 
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar {
-  max-width: 1100px;
-  margin: 0px auto;
-
-  img {
-    width: 140px;
-    position: relative;
-    bottom: 2px;
-    margin-right: 80px;
-  }
-
-  .btn-nav {
-    background-color: $primary;
-    padding: 15px 40px;
-    border-radius: 0;
-    color: white;
-  }
-
-  .active {
-    color: $primary!important;
-    border-bottom: 2px solid $primary;
-  }
-
-  .navbar-nav .nav-link {
-    padding: 18px 0;
-    margin: 0 0.8rem;
-    font-size: 0.8rem;
-  }
-}
-
-.btn-primary {
-  color: white;
-  border-radius: 0 0 15px 0;
-  font-size: 0.7rem;
-  padding: 12px 30px;
-
-  i {
-    font-size: 0.9rem;
-    margin-left: 20px;
-    position: relative;
-    top: 1px;
-  }
-}
-
-h2, p {
-  color: rgba(60,60,60,1);
-}
-
-h3 {
-  font-size: 0.8rem;
-  color: rgba(140,140,140,1);
-  letter-spacing: 2px;
-  margin-bottom: 15px;
-}
-
-h4 {
-  color: #009a77;
-  font-size: 2.4rem;
-  font-weight: bold;
-  margin-bottom: 0;
-}
-
-.header-container {
-  padding-top: 60px;
-}
-
 .container {
-  max-width: 1025px;
+  max-width: 1080px;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -80,24 +21,32 @@ h4 {
 }
 
 .header {
-  height: 600px;
+  height: 700px;
   background-image: linear-gradient(to right, rgba(20, 62, 146, 0.4) 20%, rgba(48, 152, 125, 0.5), rgba(0,0,0,0) 65%),
-    url('/assets/images/header_image.jpeg');
+  url('/assets/images/header_image.jpeg');
   filter: brightness(95%);
   background-position: center;
   background-size: cover;
+
+  .header-container {
+    padding-top: 60px;
+  }
+
+  .headline {
+    flex-shrink: 100;
+    margin-right: 140px;
+  }
 }
 
-
 .about {
-  height: 700px;
+  height: 800px;
 
   .about-stats {
     padding: 40px 40px 40px 40px;
     margin-right: 100px;
     width: 400px;
-    background-color: $secondary;
     height: 550px;
+    background-color: $secondary;
     position: relative;
 
     p {
@@ -116,20 +65,21 @@ h4 {
     width: 0;
   }
 
-
   .stat {
     font-size: 5rem;
   }
-
-
 
   .about-info {
     flex-shrink: 100;
   }
 }
 
-
 .services {
   height: 300px;
   background-color: rgba(245,245,245,1);
+
+  .services-info {
+    flex-shrink: 100;
+    padding-top: 40px;
+  }
 }
