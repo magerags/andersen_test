@@ -11,13 +11,6 @@ class Quote extends Component {
     this.state = { submitted: false };
   }
 
-  DateInput = () => {
-    const [startDate, setStartDate] = useState(null);
-    return (
-      <DatePicker selected={startDate} onChange={date => setStartDate(date)} />
-    );
-  }
-
   handleClick = () => {
     this.setState({submitted: true });
   }
