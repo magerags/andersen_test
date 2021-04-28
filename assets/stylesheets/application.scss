@@ -12,6 +12,14 @@ body {
     width: 140px;
     position: relative;
     bottom: 2px;
+    margin-right: 80px;
+  }
+
+  .btn-nav {
+    background-color: $primary;
+    padding: 15px 40px;
+    border-radius: 0;
+    color: white;
   }
 
   .active {
@@ -20,15 +28,55 @@ body {
   }
 
   .navbar-nav .nav-link {
-    padding: 12px 0;
+    padding: 18px 0;
     margin: 0 0.8rem;
+    font-size: 0.8rem;
   }
+}
+
+.btn-primary {
+  color: white;
+  border-radius: 0 0 15px 0;
+  font-size: 0.7rem;
+  padding: 12px 30px;
+
+  i {
+    font-size: 0.9rem;
+    margin-left: 20px;
+    position: relative;
+    top: 1px;
+  }
+}
+
+h2, p {
+  color: rgba(60,60,60,1);
+}
+
+h3 {
+  font-size: 0.8rem;
+  color: rgba(140,140,140,1);
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+h4 {
+  color: #009a77;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.header-container {
+  padding-top: 60px;
 }
 
 .container {
   max-width: 1025px;
+  height: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
 
 .header {
@@ -40,10 +88,48 @@ body {
   background-size: cover;
 }
 
+
 .about {
   height: 700px;
+
+  .about-stats {
+    padding: 40px 40px 40px 40px;
+    margin-right: 100px;
+    width: 400px;
+    background-color: $secondary;
+    height: 550px;
+    position: relative;
+
+    p {
+      color: white;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+  }
+
+  .about-stats::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    border-top: 50px solid white;
+    border-left: 50px solid $secondary;
+    width: 0;
+  }
+
+
+  .stat {
+    font-size: 5rem;
+  }
+
+
+
+  .about-info {
+    flex-shrink: 100;
+  }
 }
+
 
 .services {
   height: 300px;
+  background-color: rgba(245,245,245,1);
 }
